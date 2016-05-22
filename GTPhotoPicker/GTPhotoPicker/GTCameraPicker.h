@@ -11,6 +11,7 @@
 
 @interface GTCameraPicker : NSObject
 
+// 回调
 + (void)loadImageFromeViewController:(UIViewController *)viewController finishAction:(void(^)(UIImage *image))finishAction;
 
 @end

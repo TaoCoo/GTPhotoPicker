@@ -66,6 +66,15 @@
                 
                 // 系统相册选取,回传入imgArray的数量,最多上传数量为9
                 
+                GTAlbumPicker *picker = [GTAlbumPicker new];
+                
+                picker.maxPhotoPickNumber = weakSelf.imgArray.count;
+                
+                [picker loadImageFromeViewController:self result:^(NSArray *imgArray) {
+                    
+                    // 添加操作
+                }];
+                
             }
         }];
         

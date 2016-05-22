@@ -13,5 +13,6 @@
 #define kMaxPhotoPickNumber 9
 
 #import "GTCameraPicker.h"
+#import "GTAlbumPicker.h"
 
 #endif /* GTPhotoPicker_h */

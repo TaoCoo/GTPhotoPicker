@@ -17,6 +17,10 @@
 		64F64E4B1CF095E100AD10E9 /* GTPhotoPickerUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 64F64E4A1CF095E100AD10E9 /* GTPhotoPickerUITests.m */; };
 		64F64E5B1CF0987D00AD10E9 /* SystemActionSheet.m in Sources */ = {isa = PBXBuildFile; fileRef = 64F64E5A1CF0987D00AD10E9 /* SystemActionSheet.m */; };
 		64F64E5F1CF09F5600AD10E9 /* GTCameraPicker.m in Sources */ = {isa = PBXBuildFile; fileRef = 64F64E5E1CF09F5600AD10E9 /* GTCameraPicker.m */; };
+		64F64E661CF15BA800AD10E9 /* GTAlbumPicker.m in Sources */ = {isa = PBXBuildFile; fileRef = 64F64E651CF15BA800AD10E9 /* GTAlbumPicker.m */; };
+		64F64E691CF161D200AD10E9 /* GTAlbumPickerDetail_VC.m in Sources */ = {isa = PBXBuildFile; fileRef = 64F64E681CF161D200AD10E9 /* GTAlbumPickerDetail_VC.m */; };
+		64F64E6C1CF16C9D00AD10E9 /* GTAlbumPickerCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 64F64E6B1CF16C9D00AD10E9 /* GTAlbumPickerCollectionViewCell.m */; };
+		64F64E6F1CF16CD300AD10E9 /* GTGetAlbumPhotos.m in Sources */ = {isa = PBXBuildFile; fileRef = 64F64E6E1CF16CD300AD10E9 /* GTGetAlbumPhotos.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -58,6 +62,14 @@
 		64F64E5D1CF09F5600AD10E9 /* GTCameraPicker.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GTCameraPicker.h; sourceTree = "<group>"; };
 		64F64E5E1CF09F5600AD10E9 /* GTCameraPicker.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GTCameraPicker.m; sourceTree = "<group>"; };
 		64F64E601CF09F7700AD10E9 /* GTPhotoPicker.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GTPhotoPicker.h; sourceTree = "<group>"; };
+		64F64E641CF15BA800AD10E9 /* GTAlbumPicker.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GTAlbumPicker.h; sourceTree = "<group>"; };
+		64F64E651CF15BA800AD10E9 /* GTAlbumPicker.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GTAlbumPicker.m; sourceTree = "<group>"; };
+		64F64E671CF161D200AD10E9 /* GTAlbumPickerDetail_VC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GTAlbumPickerDetail_VC.h; sourceTree = "<group>"; };
+		64F64E681CF161D200AD10E9 /* GTAlbumPickerDetail_VC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GTAlbumPickerDetail_VC.m; sourceTree = "<group>"; };
+		64F64E6A1CF16C9D00AD10E9 /* GTAlbumPickerCollectionViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GTAlbumPickerCollectionViewCell.h; sourceTree = "<group>"; };
+		64F64E6B1CF16C9D00AD10E9 /* GTAlbumPickerCollectionViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GTAlbumPickerCollectionViewCell.m; sourceTree = "<group>"; };
+		64F64E6D1CF16CD300AD10E9 /* GTGetAlbumPhotos.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GTGetAlbumPhotos.h; sourceTree = "<group>"; };
+		64F64E6E1CF16CD300AD10E9 /* GTGetAlbumPhotos.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GTGetAlbumPhotos.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -164,6 +176,14 @@
 				64F64E601CF09F7700AD10E9 /* GTPhotoPicker.h */,
 				64F64E5D1CF09F5600AD10E9 /* GTCameraPicker.h */,
 				64F64E5E1CF09F5600AD10E9 /* GTCameraPicker.m */,
+				64F64E641CF15BA800AD10E9 /* GTAlbumPicker.h */,
+				64F64E651CF15BA800AD10E9 /* GTAlbumPicker.m */,
+				64F64E671CF161D200AD10E9 /* GTAlbumPickerDetail_VC.h */,
+				64F64E681CF161D200AD10E9 /* GTAlbumPickerDetail_VC.m */,
+				64F64E6A1CF16C9D00AD10E9 /* GTAlbumPickerCollectionViewCell.h */,
+				64F64E6B1CF16C9D00AD10E9 /* GTAlbumPickerCollectionViewCell.m */,
+				64F64E6D1CF16CD300AD10E9 /* GTGetAlbumPhotos.h */,
+				64F64E6E1CF16CD300AD10E9 /* GTGetAlbumPhotos.m */,
 			);
 			path = GTPhotoPicker;
 			sourceTree = "<group>";
@@ -301,9 +321,13 @@
 			files = (
 				64F64E5F1CF09F5600AD10E9 /* GTCameraPicker.m in Sources */,
 				64F64E2D1CF095E100AD10E9 /* ViewController.m in Sources */,
+				64F64E691CF161D200AD10E9 /* GTAlbumPickerDetail_VC.m in Sources */,
 				64F64E2A1CF095E100AD10E9 /* AppDelegate.m in Sources */,
 				64F64E5B1CF0987D00AD10E9 /* SystemActionSheet.m in Sources */,
+				64F64E661CF15BA800AD10E9 /* GTAlbumPicker.m in Sources */,
 				64F64E271CF095E100AD10E9 /* main.m in Sources */,
+				64F64E6F1CF16CD300AD10E9 /* GTGetAlbumPhotos.m in Sources */,
+				64F64E6C1CF16C9D00AD10E9 /* GTAlbumPickerCollectionViewCell.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
