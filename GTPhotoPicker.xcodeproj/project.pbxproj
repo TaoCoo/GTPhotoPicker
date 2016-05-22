@@ -21,6 +21,8 @@
 		64F64E691CF161D200AD10E9 /* GTAlbumPickerDetail_VC.m in Sources */ = {isa = PBXBuildFile; fileRef = 64F64E681CF161D200AD10E9 /* GTAlbumPickerDetail_VC.m */; };
 		64F64E6C1CF16C9D00AD10E9 /* GTAlbumPickerCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 64F64E6B1CF16C9D00AD10E9 /* GTAlbumPickerCollectionViewCell.m */; };
 		64F64E6F1CF16CD300AD10E9 /* GTGetAlbumPhotos.m in Sources */ = {isa = PBXBuildFile; fileRef = 64F64E6E1CF16CD300AD10E9 /* GTGetAlbumPhotos.m */; };
+		64F64E721CF1836100AD10E9 /* select_no.png in Resources */ = {isa = PBXBuildFile; fileRef = 64F64E701CF1836100AD10E9 /* select_no.png */; };
+		64F64E731CF1836100AD10E9 /* select_yes.png in Resources */ = {isa = PBXBuildFile; fileRef = 64F64E711CF1836100AD10E9 /* select_yes.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -70,6 +72,8 @@
 		64F64E6B1CF16C9D00AD10E9 /* GTAlbumPickerCollectionViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GTAlbumPickerCollectionViewCell.m; sourceTree = "<group>"; };
 		64F64E6D1CF16CD300AD10E9 /* GTGetAlbumPhotos.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GTGetAlbumPhotos.h; sourceTree = "<group>"; };
 		64F64E6E1CF16CD300AD10E9 /* GTGetAlbumPhotos.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GTGetAlbumPhotos.m; sourceTree = "<group>"; };
+		64F64E701CF1836100AD10E9 /* select_no.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = select_no.png; sourceTree = "<group>"; };
+		64F64E711CF1836100AD10E9 /* select_yes.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = select_yes.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -173,6 +177,8 @@
 		64F64E5C1CF09ADC00AD10E9 /* GTPhotoPicker */ = {
 			isa = PBXGroup;
 			children = (
+				64F64E701CF1836100AD10E9 /* select_no.png */,
+				64F64E711CF1836100AD10E9 /* select_yes.png */,
 				64F64E601CF09F7700AD10E9 /* GTPhotoPicker.h */,
 				64F64E5D1CF09F5600AD10E9 /* GTCameraPicker.h */,
 				64F64E5E1CF09F5600AD10E9 /* GTCameraPicker.m */,
@@ -292,9 +298,11 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				64F64E721CF1836100AD10E9 /* select_no.png in Resources */,
 				64F64E351CF095E100AD10E9 /* LaunchScreen.storyboard in Resources */,
 				64F64E321CF095E100AD10E9 /* Assets.xcassets in Resources */,
 				64F64E301CF095E100AD10E9 /* Main.storyboard in Resources */,
+				64F64E731CF1836100AD10E9 /* select_yes.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -41,10 +41,7 @@
         // 上传的图片数量小于9，继续上传
         NSLog(@"----imgArray=%@----",_imgArray);
         
-        
-        
         __weak typeof(self) weakSelf = self;
-        
         
         [SystemActionSheet loadActionSheetInVC:self withTitle:@"请选择照片" message:nil handelTitle:@[@"拍照",@"从相册选择"] handler:^(NSInteger actionTag) {
             
@@ -68,13 +65,19 @@
                 
                 GTAlbumPicker *picker = [GTAlbumPicker new];
                 
-                picker.maxPhotoPickNumber = weakSelf.imgArray.count;
+                picker.maxPhotoPickNumber = kMaxPhotoPickNumber - weakSelf.imgArray.count;
                 
                 [picker loadImageFromeViewController:self result:^(NSArray *imgArray) {
                     
                     // 添加操作
+                    if (imgArray.count > 0) {
+                        [imgArray enumerateObjectsUsingBlock:^(UIImage *image, NSUInteger idx, BOOL * _Nonnull stop) {
+                            [weakSelf.imgArray addObject:image];
+                        }];
+
+                    }
+                   
                 }];
-                
             }
         }];
         

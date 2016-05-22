@@ -7,7 +7,14 @@
 //
 
 #import <UIKit/UIKit.h>
-
+#import <Photos/Photos.h>
 @interface GTAlbumPickerCollectionViewCell : UICollectionViewCell
+
+@property(strong,nonatomic) UIImageView *photoImage;
+@property(strong,nonatomic) UIButton *selectButton;
+
+
+-(void)loadPhotoData:(PHAsset *)assetItem;
+-(void)selectButtonStage:(NSMutableArray *)selectArray existence:(PHAsset *)assetItem;
 
 @end

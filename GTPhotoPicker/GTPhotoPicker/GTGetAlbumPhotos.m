@@ -18,6 +18,28 @@
     return [self getPhotosWithFetchResult:fetchResult];
 }
 
+-(void)getImageObject:(id)asset complection:(void (^)(UIImage *image, BOOL isDegraded))complection{
+    if ([asset isKindOfClass:[PHAsset class]]) {
+        PHAsset *phAsset = (PHAsset *)asset;
+        
+        CGFloat photoWidth = [UIScreen mainScreen].bounds.size.width;
+        
+        CGFloat aspectRatio = phAsset.pixelWidth / (CGFloat)phAsset.pixelHeight;
+        CGFloat multiple = [UIScreen mainScreen].scale;
+        CGFloat pixelWidth = photoWidth * multiple;
+        CGFloat pixelHeight = pixelWidth / aspectRatio;
+        
+        [[PHImageManager defaultManager] requestImageForAsset:phAsset targetSize:CGSizeMake(pixelWidth, pixelHeight) contentMode:PHImageContentModeAspectFit options:nil resultHandler:^(UIImage * _Nullable result, NSDictionary * _Nullable info) {
+            
+            BOOL downloadFinined = (![[info objectForKey:PHImageCancelledKey] boolValue] && ![info objectForKey:PHImageErrorKey]);
+            if (downloadFinined) {
+                if (complection) complection(result,[[info objectForKey:PHImageResultIsDegradedKey] boolValue]);
+            }
+        }];
+    }
+}
+
+
 #pragma mark - private
 
 // 根据图片集获取result
