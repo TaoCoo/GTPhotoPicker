@@ -23,6 +23,7 @@
 		64F64E6F1CF16CD300AD10E9 /* GTGetAlbumPhotos.m in Sources */ = {isa = PBXBuildFile; fileRef = 64F64E6E1CF16CD300AD10E9 /* GTGetAlbumPhotos.m */; };
 		64F64E721CF1836100AD10E9 /* select_no.png in Resources */ = {isa = PBXBuildFile; fileRef = 64F64E701CF1836100AD10E9 /* select_no.png */; };
 		64F64E731CF1836100AD10E9 /* select_yes.png in Resources */ = {isa = PBXBuildFile; fileRef = 64F64E711CF1836100AD10E9 /* select_yes.png */; };
+		C8EF0AFA1CF290C200189839 /* GTPhotoBrowser.m in Sources */ = {isa = PBXBuildFile; fileRef = C8EF0AF91CF290C200189839 /* GTPhotoBrowser.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -74,6 +75,8 @@
 		64F64E6E1CF16CD300AD10E9 /* GTGetAlbumPhotos.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GTGetAlbumPhotos.m; sourceTree = "<group>"; };
 		64F64E701CF1836100AD10E9 /* select_no.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = select_no.png; sourceTree = "<group>"; };
 		64F64E711CF1836100AD10E9 /* select_yes.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = select_yes.png; sourceTree = "<group>"; };
+		C8EF0AF81CF290C200189839 /* GTPhotoBrowser.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GTPhotoBrowser.h; sourceTree = "<group>"; };
+		C8EF0AF91CF290C200189839 /* GTPhotoBrowser.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GTPhotoBrowser.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -188,6 +191,8 @@
 				64F64E681CF161D200AD10E9 /* GTAlbumPickerDetail_VC.m */,
 				64F64E6A1CF16C9D00AD10E9 /* GTAlbumPickerCollectionViewCell.h */,
 				64F64E6B1CF16C9D00AD10E9 /* GTAlbumPickerCollectionViewCell.m */,
+				C8EF0AF81CF290C200189839 /* GTPhotoBrowser.h */,
+				C8EF0AF91CF290C200189839 /* GTPhotoBrowser.m */,
 				64F64E6D1CF16CD300AD10E9 /* GTGetAlbumPhotos.h */,
 				64F64E6E1CF16CD300AD10E9 /* GTGetAlbumPhotos.m */,
 			);
@@ -333,6 +338,7 @@
 				64F64E2A1CF095E100AD10E9 /* AppDelegate.m in Sources */,
 				64F64E5B1CF0987D00AD10E9 /* SystemActionSheet.m in Sources */,
 				64F64E661CF15BA800AD10E9 /* GTAlbumPicker.m in Sources */,
+				C8EF0AFA1CF290C200189839 /* GTPhotoBrowser.m in Sources */,
 				64F64E271CF095E100AD10E9 /* main.m in Sources */,
 				64F64E6F1CF16CD300AD10E9 /* GTGetAlbumPhotos.m in Sources */,
 				64F64E6C1CF16C9D00AD10E9 /* GTAlbumPickerCollectionViewCell.m in Sources */,

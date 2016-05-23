@@ -6,15 +6,13 @@
 //  Copyright © 2016年 gt. All rights reserved.
 //
 
-#define kAlbumPickerScreenW  [UIScreen mainScreen].bounds.size.width
-#define kAlbumPickerScreenH [UIScreen mainScreen].bounds.size.height
-#define kAlbumPickerRGBA(r,g,b,a) [UIColor colorWithRed:r/255.0f green:g/255.0f blue:b/255.0f alpha:a]
-#define kAlbumPickerMainColor [UIColor cyanColor]
-#define kAlbumPickerFontWithFloat(float) [UIFont systemFontOfSize:float]
+
 
 #import "GTAlbumPickerDetail_VC.h"
+#import "GTPhotoPicker.h"
 #import "GTGetAlbumPhotos.h"
 #import "GTAlbumPickerCollectionViewCell.h"
+#import "GTPhotoBrowser.h"
 
 @interface GTAlbumPickerDetail_VC ()<UICollectionViewDelegate,UICollectionViewDataSource>
 
@@ -145,6 +143,11 @@
     
     if (button.tag == 0) {
         // 预览
+        
+        GTPhotoBrowser *photoBrowser = [GTPhotoBrowser new];
+        photoBrowser.selectedImageArray = _selectArray;
+        [self presentViewController:photoBrowser animated:YES completion:nil];
+        
     }else if (button.tag == 1){
         // 完成
         if (_selectArray.count == 0) {
