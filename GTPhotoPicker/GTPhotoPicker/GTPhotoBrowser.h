@@ -18,6 +18,6 @@
 /**
  *  删除图片的回调
  */
-@property (nonatomic,copy) void(^DeleteImageBlock)(NSInteger deleteIndex);
+//@property (nonatomic,copy) void(^DeleteImageBlock)(NSInteger deleteIndex);
 
 @end

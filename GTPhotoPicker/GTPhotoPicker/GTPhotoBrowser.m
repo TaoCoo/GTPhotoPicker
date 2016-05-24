@@ -85,8 +85,8 @@
         [_scrollView addSubview:imgView];
         
         // 添加手势
-        UITapGestureRecognizer *tapGesture=[[UITapGestureRecognizer alloc]initWithTarget:self action:@selector(imageViewTouchAction:)];
-        [imgView addGestureRecognizer:tapGesture];
+        UITapGestureRecognizer *singleGesture = [[UITapGestureRecognizer alloc]initWithTarget:self action:@selector(singleTouchAction:)];
+        [imgView addGestureRecognizer:singleGesture];
         
         // 基本信息设置
         [self.manager getImageObject:obj complection:^(UIImage *imageItem, BOOL isDegraded) {
@@ -102,12 +102,8 @@
     _scrollView.contentSize = CGSizeMake(kAlbumPickerScreenW*(imageArray.count), kScrollViewHeight);
 }
 
-- (void)imageViewTouchAction:(id)sender{
-    [self navgationBarShowAndHiddenAnimation];
-}
-
-- (void)navgationBarShowAndHiddenAnimation{
-    
+- (void)singleTouchAction:(UITapGestureRecognizer *)tap{
+   
     NSInteger offsetY = _bgView.frame.origin.y == 0 ? -64:0;
     
     [UIView animateWithDuration:0.5 animations:^{
@@ -116,7 +112,7 @@
                                    _bgView.frame.size.width,
                                    _bgView.frame.size.height);
     }];
-    
+
 }
 
 #pragma mark - scrollViewDelegate
